@@ -203,6 +203,7 @@ exports.unlikePost = (req, res) => {
         })
 };
 
+// Delete a post
 exports.deletePost = (req, res) => {
     const document = db.doc(`/posts/${req.params.postId}`);
     document.get()
